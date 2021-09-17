@@ -6,6 +6,7 @@ import com.iplproj.ipldashboard.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by sridharrajagopal on 9/17/21.
  */
 @RestController
+@CrossOrigin(origins = "*")
 public class TeamController {
     @Autowired
     private TeamRepository teamRepository;
