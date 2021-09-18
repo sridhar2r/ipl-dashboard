@@ -5,6 +5,7 @@ import {MatchSmallCard} from '../components/MatchSmallCard';
 
 export const TeamPage = () => {
   const [team, setTeam] = useState({matches:[]});
+  // Object Destructuring  will get teamName from params passed from App.js https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
   const {teamName} = useParams()
   useEffect(
         () => {
